@@ -126,3 +126,24 @@ h2 {
   width: 100%;
   background-color: blue;
 }
+
+/* scroll Top Button */
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: 1px solid grey;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 100%;
+  font-size: 20px;
+  opacity: 0;
+  cursor: pointer;
+  transform: translateY(3rem);
+  transition: all 0.3s;
+}
+.show-btn {
+  opacity: 1;
+  transform: translateY(0);
+}

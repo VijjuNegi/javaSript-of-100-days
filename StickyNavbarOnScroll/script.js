@@ -14,3 +14,25 @@ navbarNav.addEventListener("click", (e) => {
     e.target.parentElement.classList.add("active");
   }
 });
+
+/* scroll Top Button */
+const scrollBtn = document.querySelector(".scrollTop ");
+
+const rootEl = document.documentElement;
+
+document.addEventListener("scroll", showBtn);
+scrollBtn.addEventListener("click", () => {
+  rootEl.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+function showBtn() {
+  const scrollTotal = rootEl.scrollHeight - rootEl.clientHeight;
+  if (rootEl.scrollTop / scrollTotal > 0.3) {
+    scrollBtn.classList.add("show-btn");
+  } else {
+    scrollBtn.classList.remove("show-btn");
+  }
+}
