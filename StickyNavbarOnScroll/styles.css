@@ -61,10 +61,10 @@ header.sticky {
 }
 a.navbar-brand {
   font-size: 20px;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 a.nav-link {
-  color: #fff !important;
+  color: var(--white) !important;
   font-size: 14px;
   padding: 0 32px !important;
 }
@@ -74,7 +74,9 @@ header.sticky a.navbar-brand {
 header.sticky a.nav-link {
   color: #000 !important;
 }
-
+a.nav-link.active {
+  color: var(--white);
+}
 /* New Section CSS */
 section.header {
   width: 100%;
@@ -106,4 +108,21 @@ h2 {
 
 .flex > * {
   margin: 3px;
+}
+
+/* Active  Menu Switcher*/
+.active {
+  position: relative;
+}
+.active > * {
+  color: blue !important;
+}
+.active::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  width: 100%;
+  background-color: blue;
 }
