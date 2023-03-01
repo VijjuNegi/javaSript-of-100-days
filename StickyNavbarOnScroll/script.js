@@ -3,7 +3,7 @@ window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// active
+// Active  Menu Switcher
 
 const navbarNav = document.querySelector(".navbar-nav");
 navbarNav.addEventListener("click", (e) => {
@@ -36,3 +36,4 @@ function showBtn() {
     scrollBtn.classList.remove("show-btn");
   }
 }
+/* End scroll Top Button */

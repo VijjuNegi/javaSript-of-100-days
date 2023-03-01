@@ -68,6 +68,9 @@ a.nav-link {
   font-size: 14px;
   padding: 0 32px !important;
 }
+.navItemText {
+  color: red;
+}
 header.sticky a.navbar-brand {
   color: #000 !important;
 }
